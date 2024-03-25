@@ -1,0 +1,46 @@
+:root {
+  --primary-color: #161008;
+  --secondary-color: #5e503f;
+  --accent1-color: #c6ac8f;
+  --accent2-color: #22333b;
+  --accent3-color: #eec566;
+  --heading-font: "Bitter", Arial, sans-serif;
+  --paragraph-font: "PT Sans", Verdana, sans-serif;
+  --headline-color-on-white: #161008;
+  --headline-color-on-color: #eec566;
+  --paragraph-color-on-white: #161008;
+  --paragraph-color-on-color: #f4f1ef;
+  --paragraph-background: #161008;
+  --nav-link-color: #eec566;
+  --nav-background: #161008;
+  --nav-hover-link-color: #f4f1ef;
+  --nav-hover-background: #5e503f;
+  --btn-color: #161008;
+  --shadow: rgba(54, 54, 54, 0);
+
+  --normal: #a8a878;
+  --fire: #f08030;
+  --water: #6890f0;
+  --grass: #78c850;
+  --electric: #f8d030;
+  --ice: #98d8d8;
+  --fighting: #c03028;
+  --poison: #a040a0;
+  --ground: #e0c068;
+  --flying: #a890f0;
+  --psychic: #f85888;
+  --bug: #a8b820;
+  --rock: #b8a038;
+  --ghost: #705898;
+  --dragon: #7038f8;
+  --dark: #705848;
+  --steel: #b8b8d0;
+  --fairy: #ee99ac;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--paragraph-font);
+}

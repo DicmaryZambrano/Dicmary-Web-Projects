@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DZ GameShop - Siteplan</title>
+    <meta name="author" content="Dicmary Zambrano" />
+    <meta />
+    <meta name="description" content="DZ GameShop Siteplan" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/site-plan-style.css" />
+    <script src="js/main.js" type="module"></script>
+  </head>
+  <body class="classic-gradient">
+    <header>
+      <h1>Site Plan</h1>
+      <h2>Dicmary Zambrano</h2>
+      <h2>WDD 330</h2>
+    </header>
+    <main>
+      <hr />
+      <h2>Overview</h2>
+      <p>
+        I will explore creating an application that allows users to explore
+        video games across different platforms, save their favorite games to a
+        personal collection, and receive game recommendations based on their
+        preferences.
+      </p>
+
+      <h3>Site Name</h3>
+      <p>DZ Games</p>
+
+      <h3>Purpose</h3>
+      <p>
+        This website is geared towards people that like games or want to know
+        more about games, By utilizing the IGDB API it displays a list of up to
+        100 games with their categories, videos, screenshots, description,
+        storyline, etc.
+      </p>
+
+      <h3>Audience</h3>
+      <p>
+        The audience for this website is individuals that want to discover new
+        games to add to their collection people that want to know more about a
+        certain game like the rating, the platforms the game is in, when it was
+        published, if there are any new extensions or new trailers, etc.
+      </p>
+      <hr />
+
+      <h3>Scenarios</h3>
+      <ul>
+        <li>What are the popular games right now?</li>
+        <li>What are the latest game events?</li>
+        <li>What new adventure, horror, or simulator games are there?</li>
+        <li>What high rated pc, PS4 or Xbox games are there?</li>
+        <li>Where can I save the games I liked?</li>
+        <li>What is the general information of the game?</li>
+        <li>Where could I see more information about a game?</li>
+      </ul>
+
+      <h3>Core Features</h3>
+      <ul>
+        <li>
+          Users will be able to search for games and view detailed information
+        </li>
+        <li>Save favorite games to local storage</li>
+        <li>Receive game recommendations</li>
+        <li>
+          Filters for genres, platforms, and other criteria will be included to
+          help users find games they love
+        </li>
+      </ul>
+      <hr />
+
+      <h3>Data sources</h3>
+      <p>
+        Local Storage (for wishlist) API:
+        https://api-docs.igdb.com/#getting-started
+      </p>
+
+      <h3>Dynamics</h3>
+      <p>
+        The header will be displayed dynamically; all game information is
+        displayed dynamically with the help of the Api
+      </p>
+
+      <h3>Animation ideas</h3>
+      <p>
+        Animated hamburger menus, animated gallery, hover effects, animated
+        search bar, animation when adding a new favorite, sliding notifications
+      </p>
+
+      <h3>Classes</h3>
+      <ul>
+        <li>
+          Game Details: gets the game data using the game id and renders it to
+          the page, information like platforms, ratings, covers, screenshots,
+          videos, and related dlc are displayed. Using the game keywords a
+          section with similar games is generated.
+        </li>
+        <li>
+          Wishlist: Gather information from local storage to render a list of
+          favorite games
+        </li>
+        <li>
+          Favorites: uses local storage to gather the selected favorite breeds,
+          creates the grid template, renders the display
+        </li>
+        <li>
+          Event List: Populates and renders a list of game events with the
+          template, target element, and list of objects provided.
+        </li>
+        <li>
+          SearchEngine: Uses user input to search for games in the IGDB API that
+          could be related to the keywords
+        </li>
+        <li>
+          Game List: Populates and renders a list of games with the template,
+          target element, and list of objects provided.
+        </li>
+        <li>
+          ApiServices: Takes care of all the Api post and get requests for other
+          modules.
+        </li>
+        <li>
+          Utilities: Takes care of utilities like populating headers, creating
+          notifications, rendering, etc.
+        </li>
+      </ul>
+
+      <h3>Modules</h3>
+      <ul>
+        <li>GameDetails</li>
+        <li>GameList</li>
+        <li>Utilities</li>
+        <li>ApiServices</li>
+        <li>SearchEngine</li>
+        <li>Wishlist</li>
+      </ul>
+
+      <h2>Style Guide</h2>
+
+      <h3>Color Schema</h3>
+
+      <table class="colors">
+        <tr>
+          <th>Primary</th>
+          <th>Secondary</th>
+          <th>Accent 1</th>
+          <th>Accent 2</th>
+          <th>Accent 3</th>
+        </tr>
+
+        <tr>
+          <td class="primary">[#6C0ABD]</td>
+          <td class="secondary">[#3A3E3B]</td>
+          <td class="accent1">[#2A2A2E]</td>
+          <td class="accent2">[#F0EFF4]</td>
+          <td class="accent3">[#4DAA57]</td>
+        </tr>
+      </table>
+
+      <h3>Typography</h3>
+
+      <h4>Heading Font: Bitter</h4>
+      <h4>Paragraph Font: PT Sans</h4>
+      <h3>Normal paragraph example</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <h3>Colored paragraph example</h3>
+      <p class="colored">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+
+      <h3>Navigation</h3>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html">Game Gallery</a>
+        <a href="index.html">Wishlist</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Explore by Genres
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="index.html">Adventure</a>
+            <a href="index.html">RPG</a>
+            <a href="index.html">FPS</a>
+            <a href="index.html">Puzzle</a>
+            <a href="index.html">Simulator</a>
+            <a href="index.html">Survival</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Explore by Platform
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="index.html">PS3</a>
+            <a href="index.html">PS4</a>
+            <a href="index.html">XBOX</a>
+            <a href="index.html">SWICH</a>
+            <a href="index.html">STEAM</a>
+          </div>
+        </div>
+      </nav>
+      <hr />
+
+      <h2>Wireframes</h2>
+
+      <h3>Home</h3>
+      <div class="home-wireframe">
+        <h3>Mobile</h3>
+        <img
+          src="images/desktop_wireframes/1-Homepage.png"
+          alt="home page wireframe mobile"
+        />
+        <h3>Big Screen</h3>
+        <img
+          src="images/mobile_wireframes/1-Homepage.png"
+          alt="home page wireframe desktop"
+        />
+      </div>
+    </main>
+  </body>
+</html>
